@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Toy Robot Simulator</title>
+  <script src="src/robot.js" ></script>
+  <link rel="stylesheet" href="src/robot.css">
+</head>
+<body>
+    <div class="command">
+        <div>
+            <p>This is a command line Javascript application that simulates a robot on a specifiable grid<br>
+
+                   <h3> Description </h3>
+                    The application is a simulation of a toy robot moving on a square tabletop, of dimensions 5 units x 5 units.<br>
+                    There are no other obstructions on the table surface.<br>
+                    The robot is free to roam around the surface of the table, but must be prevented from falling to destruction.<br> 
+                    Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed.
+                    The application that can read in commands of the following form<br>
+                    <ul>
+                        <li>PLACE X,Y,F  put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST</li>
+                        <li>MOVE move the toy robot one unit forward in the direction it is currently facing.</li>
+                        <li>LEFT rotate the robot 90 degrees in the specified direction without changing the position of the robot.</li>
+                        <li>RIGHT same as LEFT command</li>
+                        <li>REPORT will announce the X,Y and F of the robot And Draw Robot on the below table.</li>
+                    </ul>
+                    <span>Use Exapmle buttons input command sample for testing the Robot.</span>
+            </p>
+        </div>
+        <div>
+        <label>Robot Position:</label>
+        </div>
+        <div>
+            <button id="example-1">Example 1</button>
+            <button id="example-2">Example 2</button>
+            <button id="example-3">Example 3</button>
+            <button id="example-4">Example 4</button>
+            <button id="example-5">Example 5</button>
+            <button id="example-6">Example 6</button>
+        </div>
+    
+        <label>Input Command: </label>
+        <div>
+            <div class="container">
+                <textarea rows="9"  id="inputCommand" class="textarea" autofocus></textarea>
+            </div>
+        </div>
+            <button id="reset">RESET</button>
+            <button id="start-btn" class="start-btn">START</button>  
+        <div class="output" >
+            <p id="display-report"></p>
+        </div>
+    </div>      
+    <div>
+        <canvas id="table" class="table" width="600" height="600"></canvas>
+    </div>
+</body>
+</html>

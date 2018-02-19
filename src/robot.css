@@ -1,0 +1,58 @@
+.command{
+    padding: 50px;
+}
+
+textarea {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+.error{
+    color: #FF0000;
+}
+.result li {
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+
+.result .text {
+    position: relative;
+    top: -3px;
+  }
+.result .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+button {
+    margin-top: 20px;
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer; cursor: hand;
+}
+button:hover {
+    background-color: #cfd8dc;
+}
+.table{
+display: block;
+margin: 50px auto;
+box-shadow: -2px -2px 2px #EFEFEF,5px 5px 5px #B9B9B9;
+}
